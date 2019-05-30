@@ -104,14 +104,18 @@ input[type=submit] {
 #main-container {
     padding-top: 130px;
     min-height: calc(100vh - 70px);
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
   }
 
 .maincontentsection {
-    margin: 20px 15%;
-    padding: 20px;
+    margin: 25px;
+    padding: 15px;
     background: #ffffff;
     border-color: #dddddd;
-    width: 960px;
+    /* width: 960px; */
     overflow: auto;
     clear: both;
     border-style: solid;
@@ -186,9 +190,26 @@ li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin: -10px -10px -10px;
+    }
 
 }
 
 @media screen and (max-width: 640px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .col-sm-3 {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* .col-sm-12 {
+        width: 100%;
+        margin: auto;
+    } */
 
 }
